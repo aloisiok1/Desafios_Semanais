@@ -54,6 +54,16 @@ def is_leap(year):
 year = int(input("Digite um ano: "))
 print(is_leap(year))
 
+# segunda forma para a solução
+
+def is_leap(year):
+    leap = (year % 4 == 0) and (year % 100 != 0 or year % 400 == 0)
+    return leap
+
+
+year = int(input("Digite um ano: "))
+print(is_leap(year))
+
 """# Observação:
 
 Seu objetico é só escrever sua lógica dentro da função e enviar o seu arquivo para `profmatheus.pavani@fiap.com.br` e `profedgard.kiriyama@fiap.com.br` onde apenas executaremos seu código para testar, portanto: **É PROIBIDO ALTERAR A FUNÇÃO**, o que significa que você deve manter a estrutura, apenas colocando seu lógica dentro para apenas executarmos a célula de código.
